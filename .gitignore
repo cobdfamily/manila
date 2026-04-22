@@ -90,3 +90,10 @@ typings/
 
 # Electron-Forge
 out/
+
+# Playwright / session state (auth cookies — never commit)
+sessions/
+playwright/auth/
+.playwright/
+*_session.json
+storage-state.json
