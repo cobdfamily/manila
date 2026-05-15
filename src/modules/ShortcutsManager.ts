@@ -1,3 +1,16 @@
+// manila ShortcutsManager -- registers every printable
+// alphanumeric key + every F-key as an Electron
+// globalShortcut so the renderer can react to
+// keypresses without needing focus. State machine
+// tracks the last key + a repeat count for multi-tap
+// gestures; an interval polls and resets the counter
+// when the user stops typing.
+//
+// Why a fixed key list: Electron's globalShortcut API
+// requires explicit registration per key -- there is
+// no "all keys" subscription. The a-z + 0-9 + F1-F12
+// set covers Tuna's gesture surface.
+
 import {globalShortcut } from 'electron';
 
 export class ShortcutsManager {
