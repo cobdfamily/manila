@@ -1,26 +1,9 @@
-# manila
+# manila (moved)
 
-Electron Forge app in the Tuna accessibility ecosystem.
-TypeScript renderer + main process wired through Webpack.
+This repository has been merged into the Albacore
+monorepo with full history. The package now lives at:
 
-## Develop
+https://github.com/cobdfamily/albacore/tree/main/packages/manila
 
-```
-npm install
-npm start         # electron-forge start
-npm run package   # bundle the app
-npm run make      # build distributables
-npm run lint      # eslint
-```
-
-## Layout
-
-- `src/index.ts` — main process
-- `src/preload.ts` — preload script
-- `src/renderer.ts` — renderer entrypoint
-- `src/index.html`, `src/index.css` — renderer shell
-- `src/modules/` — app modules
-
-## License
-
-AGPL-3.0 — see `LICENSE`.
+Please file issues and open PRs against `albacore`.
+This repo is preserved in archived form.
